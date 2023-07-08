@@ -22,7 +22,19 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-    ["<C-f>"] = { ":SearchMD ", desc = "Cheese search" },
+    ["<C-g>"] = { ":SearchMD ", desc = "Cheese search and generate" },
+    ["<C-f>"] = { "<cmd>ObsidianQuickSwitch<CR>", desc = "Cheese search by file name" },
+    ["<C-j>"] = { "<cmd>ObsidianSearch<CR>", desc = "Cheese search by content" },
+
+    -- buffer
+    ["L"] = {
+      function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+      desc = "Next buffer",
+    },
+    ["H"] = {
+      function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
+      desc = "Previous buffer",
+    },
   },
   t = {
     -- setting a mapping to false will disable it
