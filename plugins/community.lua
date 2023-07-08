@@ -42,4 +42,8 @@ return {
   },
 
   { import = "astrocommunity.note-taking.obsidian-nvim" },
+  {
+    "obsidian.nvim",
+    opts = { dir = "~/cheese" },
+  },
 }
