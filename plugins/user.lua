@@ -9,4 +9,11 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+
+  {
+    "jakewvincent/mkdnflow.nvim",
+    rocks = "luautf8", -- Ensures optional luautf8 dependency is installed
+    config = function() require("mkdnflow").setup() end,
+    lazy = false,
+  },
 }

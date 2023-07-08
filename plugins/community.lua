@@ -9,5 +9,16 @@ return {
 
   { import = "astrocommunity.colorscheme.gruvbox-nvim" },
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.dart", enabled = true},
+  { import = "astrocommunity.pack.dart" },
+  { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.toml" },
+  { import = "astrocommunity.pack.vue" },
+  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.kotlin" },
+  { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.bash" },
 }
