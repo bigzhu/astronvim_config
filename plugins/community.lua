@@ -8,6 +8,7 @@ return {
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 
   { import = "astrocommunity.colorscheme.gruvbox-nvim" },
+
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.dart" },
   { import = "astrocommunity.pack.markdown" },
@@ -21,4 +22,22 @@ return {
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.bash" },
+
+  { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { -- further customize the options set by the community
+    "copilot.lua",
+    opts = {
+      filetypes = {
+        yaml = true,
+        markdown = true,
+        help = true,
+        gitcommit = true,
+        gitrebase = true,
+        hgcommit = true,
+        svn = true,
+        cvs = true,
+        ["."] = true,
+      },
+    },
+  },
 }
