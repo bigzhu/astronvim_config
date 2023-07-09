@@ -20,6 +20,12 @@ return {
   -- Set colorscheme to use
   colorscheme = "gruvbox",
 
+  -- 解决下边 StatusLine 为亮色的问题
+  highlights = {
+    gruvbox = {
+      StatusLine = { fg = "#ebdbb2", bg = "#504945" },
+    },
+  },
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
