@@ -18,3 +18,5 @@
 https://github.com/rebelot/heirline.nvim/issues/124
 
 https://github.com/AstroNvim/AstroNvim/issues/1147
+
+## 避免中文拼写检查
