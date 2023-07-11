@@ -25,6 +25,7 @@ return {
     ["<C-g>"] = { ":SearchMD ", desc = "Cheese search and generate" },
     ["<C-f>"] = { "<cmd>ObsidianQuickSwitch<CR>", desc = "Cheese search by file name" },
     ["<C-j>"] = { "<cmd>ObsidianSearch<CR>", desc = "Cheese search by content" },
+    ["<F4>"] = { "<cmd>ObsidianOpen<CR>", desc = "Open current note in the Obsidian app" },
 
     -- buffer
     ["L"] = {
