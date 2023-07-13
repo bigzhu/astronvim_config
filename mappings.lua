@@ -36,6 +36,10 @@ return {
       function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
       desc = "Previous buffer",
     },
+
+    ["ts"] = { "<cmd>CamelToSnake!<CR><cmd>HyphenToSnake!<CR>", desc = "To snake" },
+    ["tc"] = { "<cmd>SnakeToCamel!<CR><cmd>HyphenToCamel!<CR>", desc = "To Camel" },
+    ["th"] = { "<cmd>CamelToHyphen!<CR><cmd>SnakeToHyphen!<CR>", desc = "To Hyphen" },
   },
   t = {
     -- setting a mapping to false will disable it

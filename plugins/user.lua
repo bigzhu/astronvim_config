@@ -16,4 +16,8 @@ return {
     config = function() require("mkdnflow").setup() end,
     lazy = false,
   },
+  {
+    "chiedo/vim-case-convert",
+    lazy = false,
+  },
 }
