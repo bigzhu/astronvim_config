@@ -40,6 +40,17 @@ return {
       },
     },
   },
+  -- 自定义 dart format 的长度
+  {
+    "flutter-tools.nvim",
+    opts = {
+      lsp = {
+        settings = {
+          lineLength = 120,
+        },
+      },
+    },
+  },
 
   -- { import = "astrocommunity.note-taking.obsidian-nvim", enabled = true },
   -- {
