@@ -51,10 +51,10 @@ return {
       },
     },
   },
-
+  --
   -- { import = "astrocommunity.note-taking.obsidian-nvim", enabled = true },
   -- {
   --   "obsidian.nvim",
-  --   opts = { dir = "~/cheese" },
+  --   opts = { event = { "BufReadPre  */cheese/*.md" }, dir = "~/cheese" },
   -- },
 }
