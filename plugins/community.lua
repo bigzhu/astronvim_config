@@ -51,10 +51,11 @@ return {
       },
     },
   },
-  --
+
+  -- 无法设置 lazy = false 所以copy出来单独的 obsidian.lua 文件配置
   -- { import = "astrocommunity.note-taking.obsidian-nvim", enabled = true },
   -- {
   --   "obsidian.nvim",
-  --   opts = { event = { "BufReadPre  */cheese/*.md" }, dir = "~/cheese" },
+  --   opts = { lazy = false, dir = "~/cheese" },
   -- },
 }
