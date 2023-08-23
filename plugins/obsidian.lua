@@ -2,7 +2,8 @@
 return {
   -- 为了快速搜我, 都启动
   lazy = false,
-  "epwalsh/obsidian.nvim",
+  -- "epwalsh/obsidian.nvim",
+  dir = "~/obsidian.nvim",
   -- the obsidian vault in this default config  ~/obsidian-vault
   -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand':
   -- event = { "bufreadpre " .. vim.fn.expand "~" .. "/my-vault/**.md" },
@@ -15,6 +16,8 @@ return {
   },
   opts = {
     -- 避免 https://github.com/epwalsh/obsidian.nvim/issues/162 的报错
+    sort_by = "modified",
+    order_by = "sortr",
     mappings = {},
     vim.keymap.set("n", "gf", function()
       if require("obsidian").util.cursor_on_markdown_link() then
